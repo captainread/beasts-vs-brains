@@ -26,5 +26,5 @@ A two player Connect Four game. This is very similar to the noughts and crosses 
 
 ### Challenge 5
 
-A [Simon Game](https://en.wikipedia.org/wiki/Simon_(game)). Build a Simon game that provides a user with sound/colour based patterns, which the user should remember and repeat. The pattern should get incrementally more difficult for the user to recall.
+A [Simon Game](https://en.wikipedia.org/wiki/Simon_(game)). Build a Simon game that provides a user with sound/colour based patterns, which the user should remember and repeat. The pattern should get incrementally more difficult for the user to recall.`
 
