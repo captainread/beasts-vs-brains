@@ -1,36 +1,35 @@
-# DOM Mini-Games
+# DOM Mini-Apps
 
-### Challenge 1
+Today is just about trying some things out and getting to know the DOM. Keep track of what you don't know! Every time you feel some frustration, put that in the bank and know things will be different soon...
 
-Make a checklist application. It should have an input field at the top, so you can add new items to the checklist. On click, items should be marked complete, with strike-through text and a checkmark. If they are clicked again, they can be unchecked. 
+### Challenge
 
-Use CSS and Emoji to make a great looking app!
+Make a checklist application.
+* It should list the tasks you have set yourself.
+* It should have an input field at the top, so you can add new items to the checklist.
+* On clicking, items should be marked complete, with strike-through text and a checkmark.
+* If they are clicked again, they can be unchecked.
 
-### Challenge 2 
+Some extension work...
+* Add a due by date to your tasks which renders how long you have to do them, and colours them red if they are overdue.
+* Allow your checklist to be sorted alphabetically or by due date.
 
-Build a calendar/clock application. It should be able to display the current time, date and day of the week.  It should also have an input field for adding reminders.
+#### Resources
 
-### Challenge 3
+Stick with MDN as much as possible - Stack Overflow is fine for very specific errors but will not really help you with 'how do I do this/that?'
 
-Choice a)
-A two player noughts and crosses. You know the rules. Build it! If you're feeling fancy you may want to include a score counter, and alternate the player that goes first. 
+* [Document API](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+* [Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+* [Node API](https://developer.mozilla.org/en-US/docs/Web/API/Node)
 
-Choice b)
+(Note that Elements are a type of Node! So some methods you might expect to exist on the Element API are actully Node methods.)
 
-A two player Connect Four game. This is very similar to the noughts and crosses game, but with harder logic. You decide which one to implement!
+#### More to play with...
 
-### Challenge 4
+* A two player noughts and crosses. You know the rules. Build it! If you're feeling fancy you may want to include a score counter, and alternate the player that goes first. 
 
-Make a photo-gallery application.  It should have an input field which can be used to search for an image, which in turn should trigger an API call to a site such as (https://www.flickr.com/) or another API that serves up photos. 
+* A two player Connect Four game. This is very similar to the noughts and crosses game, but with harder logic.
 
-You should think carefully beforehand about how the data you get back should be displayed to the user.
+* A [Simon Game](https://en.wikipedia.org/wiki/Simon_(game)). Build a Simon game that provides a user with sound/colour based patterns, which the user should remember and repeat. The pattern should get incrementally more difficult for the user to recall.
 
-### Challenge 5
-
-[Battleships](https://en.wikipedia.org/wiki/Battleship_(game)). Build a Battleship game to be played with two people. To begin with, you may wish to start the ships in the same place every time, as placing them can be quite tricky! You should take into account that neither player should be able to see each other's side of the board, so the game should include a turn-taking mechanism, which obscures the opponent's side of the board. 
-
-
-### Challenge 6
-
-A [Simon Game](https://en.wikipedia.org/wiki/Simon_(game)). Build a Simon game that provides a user with sound/colour based patterns, which the user should remember and repeat. The pattern should get incrementally more difficult for the user to recall.`
-
+* [Battleships](https://en.wikipedia.org/wiki/Battleship_(game)). Build a Battleship game to be played with two people. To begin with, you may wish to start the ships in the same place every time, as placing them can be quite tricky! You should take into account that neither player should be able to see each other's side of the board, so the game should include a turn-taking mechanism, which obscures the opponent's side of the board.
