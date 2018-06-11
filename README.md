@@ -14,6 +14,16 @@ Some extension work...
 * Add a due by date to your tasks which renders how long you have to do them, and colours them red if they are overdue.
 * Allow your checklist to be sorted alphabetically or by due date.
 
+#### Resources
+
+Stick with MDN as much as possible - Stack Overflow is fine for very specific errors but will not really help you with 'how do I do this/that?'
+
+* [Document API](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+* [Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+* [Node API](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+
+(Note that Elements are a type of Node! So some methods you might expect to exist on the Element API are actully Node methods.)
+
 #### More to play with...
 
 * A two player noughts and crosses. You know the rules. Build it! If you're feeling fancy you may want to include a score counter, and alternate the player that goes first. 
