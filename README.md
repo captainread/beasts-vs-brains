@@ -6,9 +6,10 @@ Today is just about trying some things out and getting to know the DOM. Keep tra
 
 Make a checklist application.
 * It should list the tasks you have set yourself.
-* It should have an input field at the top, so you can add new items to the checklist.
-* On clicking, items should be marked complete, with strike-through text and a checkmark.
+* On clicking, items should be marked complete, with strike-through text and a checkmark. *Hint: don't just add an checkbox input - it'll be more difficult than you think**
 * If they are clicked again, they can be unchecked.
+* It should have an input field at the top, so you can add new items to the checklist.
+
 
 Some extension work...
 * Add a due by date to your tasks which renders how long you have to do them, and colours them red if they are overdue.
