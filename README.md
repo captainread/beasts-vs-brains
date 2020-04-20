@@ -17,7 +17,7 @@ Some extension work...
 
 #### Resources
 
-Stick with MDN as much as possible - Stack Overflow is fine for very specific errors but will not really help you with 'how do I do this/that?'
+There are lots of resources online for information about the DOM, such as W3schools and MDN.  Here are some examples:
 
 * [Document API](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 * [Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
