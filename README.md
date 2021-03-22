@@ -23,7 +23,7 @@ There are lots of resources online for information about the DOM, such as W3scho
 * [Element API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 * [Node API](https://developer.mozilla.org/en-US/docs/Web/API/Node)
 
-(Note that Elements are a type of Node! So some methods you might expect to exist on the Element API are actully Node methods.)
+(Note that Elements are a type of Node! So some methods you might expect to exist on the Element API are actually Node methods.)
 
 #### More to play with...
 
