@@ -2,7 +2,7 @@
 
 Today is just about trying some things out and getting to know the DOM. You'll be making a simple website that your users can interact with. Below are a list of suggested ideas to get started with. Either choose an idea from this list or get creative and come up with your own idea, (just try to keep it relativley simple.)
 
-Start of with the core functionality of your site to get it working then think about additional features you can add.
+Start off with the core functionality of your site to get it working, and then think about additional features you can add.
 
 ## Mini App Ideas
 
