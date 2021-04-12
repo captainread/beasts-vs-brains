@@ -20,17 +20,15 @@ _Additional_
 
 ### Noughts and Crosses
 
-A true classic
-
-- Players can click on squares to place an alternating `X` or `O`
-- If a player gets 3 in a row then the game let's them know that they've won!
+- A true classic. Users can click on squares to place an alternating `X` or `O`
+- If a user places 3 `X` or `O`'s horizontally, vertically or diagonally then the game let's them know that they've won!
 
 _Additional_
 
-- Players can only choose squares that haven't already been taken
-- Once a player has won allow them to reset the game
-- Keep track of the players scores
-- Alternate who goes first
+- Players can only choose squares that haven't already been taken.
+- Once a player has won allow them to reset the game.
+- Keep track of the players scores.
+- Alternate who goes first.
 
 ### A [Memory Matching Game](https://www.memozor.com/memory-games/for-kids/pokemon-game)
 
@@ -50,12 +48,12 @@ _Additional_
 - When the user starts the game a series of colours / images / sounds are shown to the user.
 - The user must then recreate the series in the correct order.
 - If they get it right the series gains an extra step and is repeated.
-- If the user guesses any part of the series incorrectly the game is over and they gain points for how long the series is.
+- If the user guesses any part of the series incorrectly the game is over and they gain points for how many they managed to remember correctly.
 
 _Additional_
 
-- Keep a high score for the current user to beat
-- Add a delay between each part of your sequence using timeouts from resources below.
+- Keep a high score for the current user to beat.
+- Add a delay between each part of your sequence using timeouts from the resources below.
 
 ### Which <insert_pop_culture_reference_here> are you?
 
