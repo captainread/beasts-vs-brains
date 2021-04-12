@@ -6,7 +6,17 @@ Start of with the core functionality of your site to get it working then think a
 
 ## Mini App Ideas
 
-- A two player noughts and crosses. You know the rules. Build it! If you're feeling fancy you may want to include a score counter, and alternate the player that goes first.
+### A Multiple Choice Quiz
+
+- Create a quiz that asks a series of questions in turn to the user.
+- Each question should have mutliple choice answers the user can click on.
+- The user should recieve feedback telling them if they got the answer right as well as moving on to the next question.
+- At the end of the quiz they should be given their score.
+
+_Additional_
+
+- Randomise the questions to keep your quiz interesting. (Make sure you don't repeat any questions!)
+- Choose a theme for your quiz to make it more interactive. Game shows such as [Who wants to be a millionaire](https://uk.wwbm.com/) are a good source of inspiration.
 
 ### Noughts and Crosses
 
@@ -46,18 +56,6 @@ _Additional_
 
 - Keep a high score for the current user to beat
 - Add a delay between each part of your sequence using timeouts from resources below.
-
-### A Multiple Choice Quiz
-
-- Create a quiz that asks a series of questions in turn to the user.
-- Each question should have mutliple choice answers the user can click on.
-- The user should recieve feedback telling them if they got the answer right as well as moving on to the next question.
-- At the end of the quiz they should be given their score.
-
-_Additional_
-
-- Randomise the questions to keep your quiz interesting. (Make sure you don't repeat any questions!)
-- Choose a theme for your quiz to make it more interactive. Game shows such as [Who wants to be a millionaire](https://uk.wwbm.com/) are a good source of inspiration.
 
 ### Which <insert_pop_culture_reference_here> are you?
 
