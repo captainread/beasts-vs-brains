@@ -9,7 +9,7 @@ Start off with the core functionality of your site to get it working, and then t
 ### A Multiple Choice Quiz
 
 - Create a quiz that asks a series of questions in turn to the user.
-- Each question should have mutliple choice answers the user can click on.
+- Each question should have multiple choice answers the user can click on.
 - The user should recieve feedback telling them if they got the answer right as well as moving on to the next question.
 - At the end of the quiz they should be given their score.
 
