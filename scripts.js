@@ -1,4 +1,5 @@
 const start = document.getElementById("start");
+const intro = document.getElementById("intro");
 const restart = document.getElementById("restart");
 const question = document.getElementById("question");
 const answer1 = document.getElementById("1");
@@ -17,6 +18,8 @@ function restartFunc() {
 }
 
 function startQuiz() {
+  intro.style.display = "none";
+  intro2.style.display = "none";
   start.style.display = "none";
   restart.style.display = "block";
   quizTitle.style.display = "none";
@@ -69,14 +72,15 @@ let questions = [
     fact: 'Measuring from nose to tail tip, tigers are top of the board at 130", followed by leopards (126") and lions (110").',
   },
   {
-    question: "Question 5: What animal family does 'Columbidae' refer to?",
-    answer1: "Red ape",
-    answer2: "Man of the forest",
-    answer3: "Durian eater",
+    question:
+      "Question 5: What kind of animal family does 'Columbidae' refer to?",
+    answer1: "Reptile",
+    answer2: "Bird",
+    answer3: "Insect",
     correct: answer2,
     imgurl:
-      "https://images.theconversation.com/files/225151/original/file-20180627-112641-idgmo2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop",
-    fact: "The name 'orangutan' derives from the Malay words orang ('person'), and hutan ('forest'). They are among the most intelligent primates.",
+      "https://www.allaboutbirds.org/guide/assets/photo/308119951-480px.jpg",
+    fact: "This bird family consists of doves and pigeons. In English, we typically refer to the smaller species as doves, and the larger as pigeons.",
   },
 ];
 
@@ -86,6 +90,7 @@ let currentQuestion = 0;
 
 function renderQuestion() {
   result.style.display = "none";
+  factoid.style.display = "none";
   let q = questions[currentQuestion];
   answer1.disabled = false;
   answer2.disabled = false;
@@ -107,10 +112,27 @@ function checkAnswer(answer) {
   }
 }
 
+const correctText = ["You got it!", "Nicely done!", "Bang on!"];
+const wrongText = [
+  "Oops... not that one.",
+  "Sorry, that's not right.",
+  "Wrong answer, I'm afraid.",
+];
+const wrongImages = [
+  "https://media.tenor.com/images/d1c81eafdc947e7ad1989da43bc65f32/tenor.png",
+  "https://static5.depositphotos.com/1005818/444/i/600/depositphotos_4443131-stock-photo-wrong-sign.jpg",
+  "https://previews.123rf.com/images/kk5hy/kk5hy0707/kk5hy070700359/1267937-man-furious-with-his-bad-stock-trades-taking-it-out-on-his-computer-by-shooting-at-it-.jpg?fj=1",
+  "https://media.istockphoto.com/id/484016185/photo/mistake-concepts-with-oops-message-on-keyboard.jpg?s=612x612&w=0&k=20&c=6b6Jroit448b9KBk-dowlDxH6uGP5nyr7A8hPIlAsVs=",
+  "https://images.complex.com/complex/images/c_fill,f_auto,g_center,w_1200/fl_lossy,pg_1/bujewhyvyyg08gjksyqh/spongebob",
+  "https://i.imgflip.com/5fx7tf.png",
+];
+
 function answerCorrect() {
   score++;
   result.style.display = "block";
-  result.innerText = " You got it!";
+  factoid.style.display = "block";
+  result.innerText =
+    correctText[Math.floor(Math.random() * correctText.length)];
   const image = document.createElement("img");
   image.src = questions[currentQuestion].imgurl;
   image.style.maxHeight = "33vh";
@@ -121,11 +143,15 @@ function answerCorrect() {
 
 function answerWrong() {
   result.style.display = "block";
-  result.innerText = " Sorry, that's not right.";
+  result.innerText = wrongText[Math.floor(Math.random() * wrongText.length)];
+  const image = document.createElement("img");
+  image.src = wrongImages[Math.floor(Math.random() * wrongImages.length)];
+  image.style.maxHeight = "33vh";
+  result.appendChild(image);
   nextQuestion();
 }
 
-function nextQuestion() {
+https: function nextQuestion() {
   if (currentQuestion < questionsLength) {
     quiz.appendChild(next);
     currentQuestion++;
@@ -136,7 +162,7 @@ function nextQuestion() {
     });
   } else {
     const end = document.createElement("h2");
-    end.innerText = `Quiz complete. You scored ${score}/3.`;
+    end.innerText = `Quiz complete. You scored ${score}/${questions.length}.`;
     if (score === questions.length) {
       end.innerText += " You aced it!";
     }

@@ -1,6 +1,6 @@
 body {
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Arial, sans-serif;
-  background-color: #eae6e8;
+  font-family: "Roboto", sans-serif;
+  background-color: #f15062;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -17,9 +17,14 @@ body {
   /* min-width: 50vw;
   min-height: 40vh; */
   /* border: 1px solid #fceff4; */
-  background-color: #f3f6f4;
+  background-color: #ffe4e3;
   border-radius: 25px;
   padding: 3rem;
+}
+
+h1 {
+  font-family: "Sigmar One", sans-serif;
+  font-size: 300%;
 }
 
 #refreshContainer {
@@ -28,21 +33,20 @@ body {
 }
 
 button {
-  background-color: #ea4c89;
+  background-color: #00becb;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Arial, sans-serif;
   padding: 10px 16px;
   margin: auto;
   text-align: center;
 }
 
 .main-btn {
-  font-size: large;
   font-weight: bold;
+  font-size: medium;
 }
 
 .choice {
@@ -53,12 +57,12 @@ button {
 .choice:focus,
 .main-btn:hover,
 .main-btn:focus {
-  background-color: #f082ac;
+  background-color: #73dbe2;
 }
 .main-btn:disabled,
 .choice:disabled {
-  background-color: #f082ac;
-  opacity: 33%;
+  background-color: #73dbe2;
+  opacity: 66%;
   cursor: not-allowed;
 }
 
