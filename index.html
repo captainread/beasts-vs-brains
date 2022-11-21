@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animals Quiz</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+        <h1>Animals Quiz</h1>
+    </header>
+    <article>
+        <button id="start">START</button>
+        <button id="restart">RESTART</button>
+      <div id="quiz" style="display:none">
+        <h2 id="question"></h2>
+        <div id="choices">
+          <button class="choice" id="1" onclick="checkAnswer(answer1)"></button>
+          <button class="choice" id="2" onclick="checkAnswer(answer2)"></button>
+          <button class="choice" id="3" onclick="checkAnswer(answer3)"></button>
+          <p id="result"><br /></div>
+        </div>
+        <div id="progress"><div class="prog"></div></div>
+      </div>
+    </article></div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
