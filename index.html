@@ -9,23 +9,38 @@
   </head>
   <body>
     <div class="wrapper">
-    <header>
-        <h1>Animals Quiz</h1>
-    </header>
-    <article>
-        <button id="start">START</button>
-        <button id="restart">RESTART</button>
-      <div id="quiz" style="display:none">
-        <h2 id="question"></h2>
-        <div id="choices">
-          <button class="choice" id="1" onclick="checkAnswer(answer1)"></button>
-          <button class="choice" id="2" onclick="checkAnswer(answer2)"></button>
-          <button class="choice" id="3" onclick="checkAnswer(answer3)"></button>
-          <p id="result"><br /></div>
+      <header>
+        <h1 id="quizTitle">Animals Quiz</h1>
+      </header>
+      <article>
+        <button class="main-btn" id="start">Start</button>
+        <button class="main-btn" id="restart" style="display: none">Restart</button>
+        <div id="quiz" style="display: none">
+          <h2 id="question"></h2>
+          <div id="choices">
+            <button
+              class="choice"
+              id="1"
+              onclick="checkAnswer(answer1)"
+            ></button>
+            <button
+              class="choice"
+              id="2"
+              onclick="checkAnswer(answer2)"
+            ></button>
+            <button
+              class="choice"
+              id="3"
+              onclick="checkAnswer(answer3)"
+            ></button>
+            <p id="result">
+              <br />
+              <button class="main-btn" id="next" style="display: block">Next Question</button>
+            </p>
+          </div>
         </div>
-        <div id="progress"><div class="prog"></div></div>
-      </div>
-    </article></div>
+      </article>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>

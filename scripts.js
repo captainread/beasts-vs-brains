@@ -6,6 +6,7 @@ const answer2 = document.getElementById("2");
 const answer3 = document.getElementById("3");
 const quiz = document.getElementById("quiz");
 const result = document.getElementById("result");
+const next = document.getElementById("next");
 
 start.addEventListener("click", startQuiz);
 restart.addEventListener("click", restartFunc);
@@ -15,7 +16,9 @@ function restartFunc() {
 }
 
 function startQuiz() {
-  start.disabled = "true";
+  start.style.display = "none";
+  restart.style.display = "block";
+  quizTitle.style.display = "none";
   quiz.style.display = "block";
   renderQuestion();
 }
@@ -73,9 +76,6 @@ function checkAnswer(answer) {
   }
 }
 
-const nextButton = document.createElement("button");
-nextButton.innerHTML = "Next Question";
-
 function answerCorrect() {
   score++;
   result.style.display = "block";
@@ -90,18 +90,23 @@ function answerWrong() {
 }
 
 function nextQuestion() {
-  document.body.appendChild(nextButton);
   if (currentQuestion < questionsLength) {
+    quiz.appendChild(next);
     currentQuestion++;
-    nextButton.style.display = "block";
-    nextButton.addEventListener("click", () => {
+    next.style.display = "block";
+    next.addEventListener("click", () => {
       renderQuestion();
-      nextButton.style.display = "none";
+      next.style.display = "none";
     });
   } else {
     const end = document.createElement("h2");
-    end.innerText = "Quiz complete. You scored: ";
-    end.innerText += score
-    document.body.appendChild(end);
+    end.innerText = `Quiz complete. You scored ${score}/3.`;
+    if (score === questions.length) {
+      end.innerText += " You aced it!";
+    }
+    if (score === 0) {
+      end.innerText += " You totally bombed!";
+    }
+    quiz.appendChild(end);
   }
 }

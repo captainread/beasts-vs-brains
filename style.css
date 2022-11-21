@@ -1,15 +1,64 @@
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: hsl(212, 45%, 89%);
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #eae6e8;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: large;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 355px;
+  max-width: 50%;
+  border: 1px solid black;
+  padding: 3rem;
+}
+
+.choice {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: medium;
+  padding: 10px 16px;
+}
+
+.choice:hover,
+.choice:focus,
+#start:hover,
+#start:focus {
+  background-color: #f082ac;
+}
+.choice:disabled {
+  background-color: #f082ac;
+  opacity: 33%;
+  cursor: not-allowed;
+}
+
+.main-btn {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-style: italic;
+  font-size: large;
+  padding: 10px 16px;
+}
+
+#button {
+  background-color: black;
 }
