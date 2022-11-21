@@ -14,7 +14,11 @@
       </header>
       <article>
         <button class="main-btn" id="start">Start</button>
-        <button class="main-btn" id="restart" style="display: none">Restart</button>
+        <div id="refreshContainer">
+          <button class="main-btn" id="restart" style="display: none">
+            Restart
+          </button>
+        </div>
         <div id="quiz" style="display: none">
           <h2 id="question"></h2>
           <div id="choices">
@@ -33,10 +37,11 @@
               id="3"
               onclick="checkAnswer(answer3)"
             ></button>
-            <p id="result">
-              <br />
-              <button class="main-btn" id="next" style="display: block">Next Question</button>
-            </p>
+            <p id="result"></p>
+            <p id="factoid"></p>
+            <button class="main-btn" id="next" style="display: none">
+              Next Question
+            </button>
           </div>
         </div>
       </article>

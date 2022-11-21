@@ -6,6 +6,7 @@ const answer2 = document.getElementById("2");
 const answer3 = document.getElementById("3");
 const quiz = document.getElementById("quiz");
 const result = document.getElementById("result");
+const factoid = document.getElementById("factoid");
 const next = document.getElementById("next");
 
 start.addEventListener("click", startQuiz);
@@ -31,6 +32,9 @@ let questions = [
     answer2: "South Africa",
     answer3: "Australia",
     correct: answer3,
+    imgurl:
+      "https://i.guim.co.uk/img/media/28982615dfe4a8a69c5095711619b1432b1a1567/0_63_1800_1080/master/1800.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8a1a0286b780bde80c38d0929080725e",
+    fact: "The Irukandji box jellyfish (native to northern Australia) has an average size of only 1cm... but its venomous sting can be fatal to humans.",
   },
   {
     question: "Question 2: What animals are 'Holstein Friesians'?",
@@ -38,6 +42,9 @@ let questions = [
     answer2: "Horses",
     answer3: "Dogs",
     correct: answer1,
+    imgurl:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6a/Holstein_Friesian_UK_Yorkshire_July_2011.jpg",
+    fact: "Originating in the Netherlands and Germany, this breed of cattle is the world's most prolific dairy producer.",
   },
   {
     question:
@@ -46,6 +53,30 @@ let questions = [
     answer2: "Man of the forest",
     answer3: "Durian eater",
     correct: answer2,
+    imgurl:
+      "https://images.theconversation.com/files/225151/original/file-20180627-112641-idgmo2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop",
+    fact: "The name 'orangutan' derives from the Malay words orang ('person'), and hutan ('forest'). They are among the most intelligent primates.",
+  },
+  {
+    question:
+      "Question 4: On average, which of these is the longest member of the cat family?",
+    answer1: "Siberian Tiger",
+    answer2: "Lion",
+    answer3: "Leopard",
+    correct: answer1,
+    imgurl:
+      "https://animalfactguide.com/wp-content/uploads/2013/01/iStock_000005688478XSmall.jpg",
+    fact: 'Measuring from nose to tail tip, tigers are top of the board at 130", followed by leopards (126") and lions (110").',
+  },
+  {
+    question: "Question 5: What animal family does 'Columbidae' refer to?",
+    answer1: "Red ape",
+    answer2: "Man of the forest",
+    answer3: "Durian eater",
+    correct: answer2,
+    imgurl:
+      "https://images.theconversation.com/files/225151/original/file-20180627-112641-idgmo2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop",
+    fact: "The name 'orangutan' derives from the Malay words orang ('person'), and hutan ('forest'). They are among the most intelligent primates.",
   },
 ];
 
@@ -80,6 +111,11 @@ function answerCorrect() {
   score++;
   result.style.display = "block";
   result.innerText = " You got it!";
+  const image = document.createElement("img");
+  image.src = questions[currentQuestion].imgurl;
+  image.style.maxHeight = "33vh";
+  result.appendChild(image);
+  factoid.innerText = questions[currentQuestion].fact;
   nextQuestion();
 }
 

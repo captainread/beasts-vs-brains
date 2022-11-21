@@ -1,6 +1,5 @@
 body {
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Arial, sans-serif;
   background-color: #eae6e8;
   min-height: 100vh;
   display: flex;
@@ -12,53 +11,67 @@ body {
 }
 
 .wrapper {
+  align-items: center;
   margin: 0 auto;
-  max-width: 50%;
-  border: 1px solid black;
+  max-width: 50vw;
+  /* min-width: 50vw;
+  min-height: 40vh; */
+  /* border: 1px solid #fceff4; */
+  background-color: #f3f6f4;
+  border-radius: 25px;
   padding: 3rem;
 }
 
-.choice {
+#refreshContainer {
+  /* background-color: blue; */
+  margin-left: 80%;
+}
+
+button {
   background-color: #ea4c89;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  font-size: medium;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Arial, sans-serif;
   padding: 10px 16px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-btn {
+  font-size: large;
+  font-weight: bold;
+}
+
+.choice {
+  font-size: medium;
 }
 
 .choice:hover,
 .choice:focus,
-#start:hover,
-#start:focus {
+.main-btn:hover,
+.main-btn:focus {
   background-color: #f082ac;
 }
+.main-btn:disabled,
 .choice:disabled {
   background-color: #f082ac;
   opacity: 33%;
   cursor: not-allowed;
 }
 
-.main-btn {
-  background-color: #ea4c89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  font-style: italic;
-  font-size: large;
-  padding: 10px 16px;
+img {
+  padding: 0.5rem;
+  margin: auto;
+  display: block;
 }
 
-#button {
-  background-color: black;
+#result {
+  font-style: italic;
+}
+
+#factoid {
+  font-size: smaller;
 }
