@@ -9,7 +9,6 @@ const quiz = document.getElementById("quiz");
 const result = document.getElementById("result");
 const factoid = document.getElementById("factoid");
 const next = document.getElementById("next");
-
 start.addEventListener("click", startQuiz);
 restart.addEventListener("click", restartFunc);
 
@@ -29,8 +28,7 @@ function startQuiz() {
 
 let questions = [
   {
-    question:
-      "Question 1: In which country can you find the smallest jellyfish?",
+    question: "Question 1: In which country can you find the smallest jellyfish?",
     answer1: "China",
     answer2: "South Africa",
     answer3: "Australia",
@@ -45,13 +43,11 @@ let questions = [
     answer2: "Horses",
     answer3: "Dogs",
     correct: answer1,
-    imgurl:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/Holstein_Friesian_UK_Yorkshire_July_2011.jpg",
+    imgurl: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Holstein_Friesian_UK_Yorkshire_July_2011.jpg",
     fact: "Originating in the Netherlands and Germany, this breed of cattle is the world's most prolific dairy producer.",
   },
   {
-    question:
-      "Question 3: In the Malay language, what does 'orangutan' translate to?",
+    question: "Question 3: In the Malay language, what does 'orangutan' translate to?",
     answer1: "Red ape",
     answer2: "Man of the forest",
     answer3: "Durian eater",
@@ -61,25 +57,21 @@ let questions = [
     fact: "The name 'orangutan' derives from the Malay words orang ('person'), and hutan ('forest'). They are among the most intelligent primates.",
   },
   {
-    question:
-      "Question 4: On average, which of these is the longest member of the cat family?",
+    question: "Question 4: On average, which of these is the longest member of the cat family?",
     answer1: "Siberian Tiger",
     answer2: "Lion",
     answer3: "Leopard",
     correct: answer1,
-    imgurl:
-      "https://animalfactguide.com/wp-content/uploads/2013/01/iStock_000005688478XSmall.jpg",
+    imgurl: "https://animalfactguide.com/wp-content/uploads/2013/01/iStock_000005688478XSmall.jpg",
     fact: 'Measuring from nose to tail tip, tigers are top of the board at 130", followed by leopards (126") and lions (110").',
   },
   {
-    question:
-      "Question 5: What kind of animal family does 'Columbidae' refer to?",
+    question: "Question 5: What kind of animal family does 'Columbidae' refer to?",
     answer1: "Reptile",
     answer2: "Bird",
     answer3: "Insect",
     correct: answer2,
-    imgurl:
-      "https://www.allaboutbirds.org/guide/assets/photo/308119951-480px.jpg",
+    imgurl: "https://www.allaboutbirds.org/guide/assets/photo/308119951-480px.jpg",
     fact: "This bird family consists of doves and pigeons. In English, we typically refer to the smaller species as doves, and the larger as pigeons.",
   },
 ];
@@ -113,26 +105,20 @@ function checkAnswer(answer) {
 }
 
 const correctText = ["You got it!", "Nicely done!", "Bang on!"];
-const wrongText = [
-  "Oops... not that one.",
-  "Sorry, that's not right.",
-  "Wrong answer, I'm afraid.",
-];
+const wrongText = ["Oops... not that one.", "Sorry, that's not right.", "Wrong answer, I'm afraid."];
 const wrongImages = [
   "https://media.tenor.com/images/d1c81eafdc947e7ad1989da43bc65f32/tenor.png",
   "https://static5.depositphotos.com/1005818/444/i/600/depositphotos_4443131-stock-photo-wrong-sign.jpg",
   "https://previews.123rf.com/images/kk5hy/kk5hy0707/kk5hy070700359/1267937-man-furious-with-his-bad-stock-trades-taking-it-out-on-his-computer-by-shooting-at-it-.jpg?fj=1",
   "https://media.istockphoto.com/id/484016185/photo/mistake-concepts-with-oops-message-on-keyboard.jpg?s=612x612&w=0&k=20&c=6b6Jroit448b9KBk-dowlDxH6uGP5nyr7A8hPIlAsVs=",
   "https://images.complex.com/complex/images/c_fill,f_auto,g_center,w_1200/fl_lossy,pg_1/bujewhyvyyg08gjksyqh/spongebob",
-  "https://i.imgflip.com/5fx7tf.png",
 ];
 
 function answerCorrect() {
   score++;
   result.style.display = "block";
   factoid.style.display = "block";
-  result.innerText =
-    correctText[Math.floor(Math.random() * correctText.length)];
+  result.innerText = correctText[Math.floor(Math.random() * correctText.length)];
   const image = document.createElement("img");
   image.src = questions[currentQuestion].imgurl;
   image.style.maxHeight = "33vh";

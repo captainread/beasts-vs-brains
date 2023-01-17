@@ -11,12 +11,10 @@ body {
 }
 
 .wrapper {
+  flex-direction: column;
   align-items: center;
   margin: 0 auto;
   max-width: 50vw;
-  /* min-width: 50vw;
-  min-height: 40vh; */
-  /* border: 1px solid #fceff4; */
   background-color: #ffe4e3;
   border-radius: 25px;
   padding: 3rem;
@@ -28,7 +26,6 @@ h1 {
 }
 
 #refreshContainer {
-  /* background-color: blue; */
   margin-left: 80%;
 }
 
@@ -49,8 +46,13 @@ button {
   font-size: medium;
 }
 
+.choices {
+  padding: 1rem;
+}
+
 .choice {
   font-size: medium;
+  margin: 0.5rem;
 }
 
 .choice:hover,
@@ -78,4 +80,38 @@ img {
 
 #factoid {
   font-size: smaller;
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  .choices {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #refreshContainer {
+    margin: 0;
+  }
+
+  #quiz {
+    width: 50vw;
+  }
+
+  img {
+    width: 100%;
+  }
 }
